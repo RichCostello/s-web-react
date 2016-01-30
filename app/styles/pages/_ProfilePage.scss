@@ -1,0 +1,507 @@
+.littleFollower{
+  position: absolute;
+  top:-5px;
+  left:50px;
+  width: 20px !important;
+  .follow{
+    width: 100%;
+    padding: 0px;
+    height: 20px;
+    cursor: pointer;
+    i{
+    width: 100%;
+    font-size: 12px;
+    vertical-align: top;
+    line-height: 18px;
+    }
+  }
+}
+
+#card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+#card.flipped {
+  transform: rotateY( 180deg );
+}
+.prof-left-about{
+    position: absolute;
+    display:block;
+    width:100%;
+    height:100%;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    backface-visibility: hidden;
+    transform: rotateY( 180deg );
+    background:rgba(0,0,0,0.9);
+    .close{
+      display: block;
+      z-index: 999999999;
+      position: absolute;
+      opacity:0.4;
+      right: 10px;
+      float: none;
+      left: auto;
+      display:block !important;
+      color:#fff;
+    }
+}
+.prof-left-details{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display:block;
+  backface-visibility: hidden;
+  background:rgba(0,0,0,0.5);
+}
+.prof-left-about > div{
+  display:table;
+  height:100%;
+  width:100%;
+  padding:10px;
+}
+.prof-left-about p{
+  display:table-cell;
+  vertical-align: middle;
+  font-size:16px;
+}
+.profilePageContentTabs{
+    > .is-active{
+    display: block !important;
+  }
+    > .mdl-tabs__panel{
+    display: none;
+  }
+
+}
+
+ .mdl-tabs__tab {
+    height: 60px;
+    line-height: 40px;
+    font-size: $font-size--mdg !important;
+    text-transform: none;
+} 
+div.profile_cover_image{
+	height: 460px;
+  @include bg-cover;
+	position:relative;
+  .profile-avatar{
+      width: 100px;
+      height: 100px;
+      border: 2px solid $font-color--light;
+      border-radius: 71px;
+      position: absolute;
+      top:105px;
+      left:27px;
+     @include bg-cover;
+  } 
+}
+.lock {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: rgba(146,146,146,1.0);
+    font-size: 30px;
+}
+.profile-meta{
+    position: relative;
+    /* top: 292.2px; */
+      top: 386px;
+    span.demo-link{
+      bottom: 152px;
+      clear:left
+    }
+    span.demo-location{
+      bottom:156px;
+    }
+    span.demo-about{
+      bottom: 147px;
+      float:left;
+    }
+    span.demo-location, 
+    span.demo-link,
+    span.demo-about,
+    span.demo-karma {
+      font-size: $font-size--sml;
+    }
+    
+    span.demo-link, span.demo-location{
+      @include span-prof;
+      margin-left:18.5px;
+    }
+    span.profile-name, span.demo-link, span.demo-location{
+      @include span-prof;
+    }
+     span.demo-link, span.demo-location, span.demo-about{
+      color: #fff;
+      display: block;
+      width:120px;
+      position:relative;
+      text-align:center;
+      margin-left:18.5px;
+    }
+    span.profile-name{
+      color: #fff;
+      display: block;
+      width:120px;
+      position:relative;
+      text-align:center;
+    }
+}
+
+
+.prof-left-overlay{
+    height:100%;
+    width:154px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    display:table;
+    perspective: 800px;
+    overflow: hidden;
+}
+/* position of left element in hero image */
+
+span.profile-name, .profile-meta span.demo-link, .profile-meta span.demo-location{
+   margin-left:18.5px; 
+}
+span.profile-name {
+   bottom:166px;
+   font-family:$light-font;
+   font-size:$font-size--mdg
+}
+
+
+/* end position of left element in hero image */
+
+.profile-tabs {
+  height: 60px;
+  background-color: #fff;
+  margin: -8px 0px 16px 0px;
+  }
+
+.profileGradient {
+        display: block;
+    vertical-align: bottom;
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    width: 100%;
+     background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)); 
+    background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
+    background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
+}
+
+.profile-tabs a {
+    width: 234px;
+    padding: 10px 0px;
+}
+.mdl-tabs__panel > .mdl-grid{
+	padding-top:12px;
+    padding: 10px 0px 9px;
+}
+.profile-feed .mdl-grid{
+	padding:0px;
+}
+.profile-follow {
+    position: absolute;
+    bottom: 13px;
+    right: 25px;
+}
+.mdl-tabs__panel > .mdl-grid{
+	padding-top:12px;
+
+}
+.mdl-grid.feedComponent {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+.mdl-tabs__tab a:hover .mdl-tabs__ripple-container{
+	border-bottom:4px solid black;
+}
+
+.avatar-photo input[type=file] {
+    bottom: 0;
+    right: 0;
+   @include wh100lt;
+    @extend %mobcursor;
+    opacity: 0;
+    z-index: 9;
+}
+
+span.station-meta {
+    width: 160px;
+    vertical-align: top;
+    @include inline-ellip;
+}
+span.meta {
+    font-size:$font-size--mdg !important;
+    display: inline-block;
+    min-width: 90px;
+    font-family: $light-font;
+}
+button.follow,
+button.btn-station {
+    -webkit-appearance: none;
+    background: none;
+    border: 1px solid;
+    padding: 0px 15px;
+    border-radius: 10px;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    margin-top:5px;
+}
+
+button.followprof {
+  -webkit-appearance: none;
+  background: none;
+  border: 1px solid;
+  padding: 0px 10px;
+  border-radius: 8px;
+  height: 47px;
+  outline: none;
+  @include light-mdg;
+  background-color: rgba(0,0,0,0.5);
+  }
+button.btn-station{
+    color:rgba(216,216,216,1.0);
+}
+button.btn-station{
+    border:none !important;
+}
+span.pl.demo-karma{
+   display:none; 
+} 
+
+.act-bottom.listeningCount{
+        margin-top:15px;
+    }   
+
+/* wide screen display */
+@media only screen  and (min-width : 1440px) {
+  .profile-meta{
+      top:460px;
+     span.demo-location {bottom: 136px;}
+     span.demo-location,
+     span.demo-link,
+     span.demo-about,
+     span.demo-karma {
+        width:160px;
+        font-size: $font-size--mdg; 
+    }
+    span.demo-location {
+        bottom: 141px;
+        }
+    span.demo-link{
+          bottom:130px;
+    }
+    span.demo-about{
+      bottom:115px;
+    }
+    span.profile-name, span.demo-link, span.demo-about, span.demo-location{
+        width: 180px;
+        margin-left: 15px;
+    } 
+
+  }
+
+span.profile-name {
+  font-size:$font-size--lgb;
+}
+
+.prof-left-overlay {
+  width: 212px;
+ }
+
+ div.profile_cover_image .profile-avatar{
+    width: 142px;
+    height: 142px;
+    top:138px;
+    left:35px;
+}
+
+}  
+@media (max-width: 1439px){
+
+	div.profile_cover_image{
+		height: 328px;
+	}
+    button.btn-station i{
+        font-size: 2em;
+        margin-top: 8px;
+    }
+    span.meta {
+        min-width: 70px;
+        padding: 0px 5px;
+    }
+    span.about{
+      bottom:147px;
+    }
+    .meta span {
+        font-size: $font-size--md !important;
+    }
+    button.follow, button.btn-station{
+      margin-left:-20px;
+      margin-top:0px;
+    }
+    button.btn-station{
+      margin-top:-5px;
+    }
+    .act-bottom.listeningCount{
+      margin-top:6px;
+    }
+    .prof-left-about {
+      max-width: 154px;
+      height: 328px;
+      p{
+        font-size:14px;
+      }
+    }
+}
+
+/* tablet layout */
+@media (max-width: 1023px){
+    .mdl-tabs__tab{font-size:14px !important;}
+    div.profile_cover_image .profile-avatar{   
+        width: 100px;
+        height: 100px;
+        left: 16px;
+        top: 23px;
+        border:none;
+    }
+    .prof-left-overlay {
+      width:128px
+    }
+
+    .profile-tabs a{
+        width:140px;
+    }
+
+    div.profile_cover_image{height:224px;}
+    span.profile-name{
+            font-size:$font-size--mdg;
+            position:relative;
+            }
+    .prof-desciption{
+         top:13px;
+         margin-bottom: 36.7px;
+         max-width:300px;
+         width:100%;
+         position:relative;
+         left:59px;
+         font-family: $primary-font;
+          font-size:$font-size--sml;
+     }
+
+     .profile-meta{
+          top:300px;
+        span.demo-location {
+          bottom: 158px;
+          } 
+        span.demo-link {
+          bottom: 156px;
+        }
+        span.demo-about{
+          bottom:155px;
+        }
+        span.profile-name, span.demo-location, span.demo-link, span.demo-karma, span.demo-about{
+            width: 100px;
+            margin-left:14px
+          } 
+        span.demo-location, span.demo-link, span.demo-about{
+        font-size:$font-size--sm;
+       } 
+     }
+
+    button.follow, button.btn-station{ height:30px;line-height: 30px;padding: 0px 6px; }
+    button.btn-station i{margin-top:3px;}
+    
+    span.meta{display:none}
+
+    button.followprof span{
+     display:none
+    }
+    .mdl-grid.pfile, .mdl-grid.mfpage {
+    margin-top: 32px;
+    margin-left:56px;
+    margin-right:56px;
+    }
+    .prof-left-about {
+      max-width: 128px;
+      height: 224px;
+      p{
+        font-size:12px;
+      }
+    }
+}
+
+@media (max-width: 767px){
+
+     .mdl-grid.pfile, .mdl-grid.mfpage {
+          margin-left:56px !important;
+        margin-right:56px !important;
+      }
+      button.follow, button.btn-station {
+          margin-left: 0px;
+      }
+}
+
+@media (max-width: 568px){
+  .mdl-grid.pfile, .mdl-grid.mfpage {
+        margin-left:40px !important;
+        margin-right:40px !important;
+      }
+
+}
+
+@media (max-width: 480px){
+  .mdl-grid.pfile, .mdl-grid.mfpage {
+        margin-left:8px !important;
+        margin-right:8px !important;
+      }
+  .fuser{
+    margin-left: -20px;
+    width: 100%;
+    max-width: 120px;
+    @include inline-ellip;
+  }
+
+}
+
+@media (max-width: 414px){
+     button.follow, button.btn-station {
+         margin-left: 3px;
+      }
+     .mdl-grid.pfile, .mdl-grid.mfpage {
+        margin-left:0px !important;
+        margin-right:0px !important;
+      }
+
+      .mdl-cell.mdl-cell--2-col.mdl-cell--3-col-tablet.lbspan.lbshare {
+      width: 5px; 
+       margin-left: -30px;
+    }
+}
+
+@media (max-width: 350px){
+ .profile-meta span.demo-location{
+        max-width:100px;
+         margin-left:0px
+    } 
+
+  .profile-meta span.demo-location, .profile-meta span.demo-link, .profile-meta span.demo-karma, span.demo-about {
+    margin-right:0px
+    }    
+  }     
+
+
+
+
+

@@ -1,0 +1,50 @@
+.completeSignup{
+  padding:20px;
+  max-width: 300px;
+
+  .message{
+    margin-bottom: 20px;
+  }
+  .confirm{
+    width: 100%;
+    color:#fff;
+    padding:5px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+}
+
+.odh, .odh2 {
+    position:relative;
+    height: 100%;
+    display:block;
+    padding-top: 10%;
+}
+
+.odh img {
+      max-height: 140px;
+      width: auto !important;
+    max-height: 140px;
+}
+
+.odh2 img {
+      max-height: 140px;
+      width: 100%;
+}
+section.splash-page.signup{
+  min-height:800px;
+}
+section.splash-page.login{
+  min-height: 700px;
+}
+
+@media screen and (max-width: 1023px){
+  section.splash-page{min-height:780px;}
+  section.splash-page.login{min-height:700px;}
+  section.splash-page.signup{min-height:840px;}
+}
+@media screen and (max-width: 768px){
+  .odh, .odh2{padding-top:20px;}
+  .splash-page img.logo{max-height: 150px;width: auto;}
+  section.splash-page.login{min-height:650px;}
+}

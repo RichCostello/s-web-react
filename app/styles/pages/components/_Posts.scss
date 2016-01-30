@@ -1,0 +1,344 @@
+ /*custom controls for jwplayer*/
+ .playbtn{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 360px;
+    position: absolute;
+    display: table;
+    /*using all native controls for now*/
+    display: none;
+    width: 348px;
+    color: rgba(250,250,250,1);
+    z-index: 1;
+    font-size: 5em;
+    @extend %mobcursor;
+    opacity: 1;
+    /*filter: alpha(opacity=1);*/ /* For IE8 and earlier */
+
+    div{
+	    position: relative;
+	    display: table-cell;
+      /*using all native controls for now*/
+      display: none;
+	    margin: 0 auto;
+	    text-align: center;
+	    vertical-align: middle;
+    }
+
+    div:before{
+	  	  text-shadow: 1px 1px 4px rgba(0,0,0,.35), 
+               0px 3px 4px rgba(0,0,0,.35); 
+	};
+  }
+
+.fade-out{
+	opacity: 0;
+/*	filter: alpha(opacity=0);*/ /* For IE8 and earlier */
+    transition: opacity .75s  ease-in-out;
+}
+
+.fade-in{
+	opacity: 1;
+/*	filter: alpha(opacity=0);*/ /* For IE8 and earlier */
+    transition: opacity .75s  ease-in-out;
+}
+ /*end custom controls for jwplayer*/
+
+ .zmdi-more{
+      position: relative;
+    z-index: 1;
+ }
+
+ .ViewCount {
+    float: left;
+    margin-left: 10px;
+}
+
+.postpage{
+   
+   .pa100{
+      background: transparent;
+    }
+    .postModal{
+      background: #fff;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+}
+
+.CreatedAt{
+   float:right; 
+   margin-left:15px;
+}
+
+.ViewCount, .CreatedAt {
+    /* width: 100%; */
+    font-size:$font-size--mdg;
+}
+.ViewCount:before {
+    margin-right: 5px !important;
+    color: #BCBCBC;
+}
+.ViewCount span{
+  font-family:$primary-font;
+}
+.postcardMeta {
+    position: absolute;
+    right: 10px;
+}
+.no-posts{
+     text-align: center;
+    display: block;
+    margin: 40px auto;
+
+}
+
+ .moreActionsMenu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgba(240, 240, 240, 0.9);
+    top: -44px;
+    right: -13px;
+    width: 0px;
+    z-index: 0;
+    height: 0px;
+    padding: 0px;
+    overflow: hidden;
+ }
+ .post-meta{
+    margin-left: 10px;
+    margin-right: 10px;
+    display:inline-block;
+  }
+ .post-meta{
+    line-height: 45px;
+  }
+
+ .action-marg{
+  display:inline-block;
+ }
+ .name2btn {
+    min-height: 85px;
+  }
+
+ .moreActionsMenu ul li {
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  line-height: 1.4em;
+  color:#929292;
+    @extend %mobcursor;
+ }
+ .Username{
+  font-size:$font-size--mdg
+ }
+
+.StationName {
+  font:$font-size--md $light-font;
+  }
+
+  .Username, .StationName{
+    margin-right:5px;
+  }
+  .StationName i{
+    margin-right:5px;
+  }
+  .moreActionsMenu ul li:hover {
+    color:#777;
+  }
+  .moreActionsMenu ul li:before {
+    margin-right: 8px;
+  }
+
+  .showMoreActions{
+    height: auto !important;
+    width: 95px !important;
+    padding: 5px 10px 0px 10px;
+    transition: height .25s  ease-in-out, width .25s ease-in-out, padding .25s ease-in-out;
+  }
+
+    .showLessActions{
+    height: 0px !important;
+    width: 0px !important;
+    padding: 0px;
+    opacity:0;
+    transition: height .25s  ease-in-out, width .25s ease-in-out, padding .25s ease-in-out;
+  }
+
+  .jwpreview{
+        background-size: cover !important;
+  }
+
+  .postcardUser{
+    margin-left: 5px;
+    span{
+      margin-right:4px;
+    }
+}
+
+.postcardStation{
+  margin-left: 2px;
+}
+
+.stationimg-card {
+    width:100%;
+    max-width:448px; 
+    @include bg-cover;
+    @extend %mobcursor;
+}
+
+.PostcardHead {
+    padding: 10px;
+    width: 100%;
+}
+
+.PostcardUserpic{
+  margin-right: 10px;
+}
+.lbspan.enddots {
+        margin-left: 0px;
+    }
+
+  @media screen and (max-width: 1440px){
+    .post-meta{
+      margin-left: 0px;
+    }
+    .lbspan.lblike, .lbspan.lbdlike {
+       width: 60px; 
+    }
+    .lbspan.enddots {
+        margin-left:auto;
+    }
+
+    .lbspan.lbcomment {
+    width: 60px;
+    } 
+
+    .ShareBtn{
+       text-align: left;
+        width:64px;
+        font-size:$font-size--sml;
+    }
+    .lbspan.enddots {
+      width:10px;
+        position: absolute;
+      right: 5px;
+
+    }
+
+    label.innersoc {
+        width: 27px;
+    }
+  }
+
+  @media (max-width :1023px){
+     .CreatedAt {
+      text-align: left;
+      margin-top: -3px;
+    } 
+
+    .ViewCount, .CreatedAt {
+    font-size: $font-size--sml; 
+    }
+    .lbspan.lblike, .lbspan.lbdlike {
+      width:90px;
+    }
+    .lbspan.enddots{
+      position: absolute;
+      right:5px;
+      left:auto;
+    }
+
+    .lbspan.lbdlike {
+      margin-left:-30px !important;
+    }
+
+    .lbspan.lbcomment {
+       width:80px;
+       margin-left:-15px !important;
+    } 
+    .mdl-grid--no-spacing.mdl-cell.mdl-cell--1-col.lbspan.enddots {
+        position: static;
+        margin-left: auto;
+    }
+  }
+
+
+  @media (max-width :767px){
+    .mdl-cell.mdl-cell--3-col.lbspan.lbdlike {
+      margin-left: -10px;
+    }
+
+    .ViewCount{
+      margin-right:-15px
+     
+    } 
+    .postcardMeta{
+      right:30px;
+    }
+
+    .ShareBtn{
+      margin-left:-9px
+    }
+
+  }
+
+   @media (max-width:480px) {
+      .ShareBtn{
+      margin-left:-20px
+    }
+    .lbspan.lbshare {
+       width: 20px;
+    }
+   }
+
+ @media (max-width:416px) {
+     .lbspan.lblike {
+          width: 95px;
+      }
+
+      .lbspan.lbdlike {
+          width: 81px;
+      }
+      .lbspan.lbshare {
+        width: 65px;
+    }
+     .lbspan.lbcomment {
+    width: 62px;
+    }
+     .ShareBtn{
+      margin-left:0px
+    }
+
+    .StationName i {
+      margin-right: 3px;
+      }
+
+   }
+
+  @media (max-width :350px){
+
+        .ShareBtn{
+          width:55px;
+          margin-left:-10px
+        }
+
+      .CreatedAt {
+        margin-left:-15px
+       }
+
+       .ViewCount{
+         margin-right:-20px 
+       }
+
+       .lbspan.lbdlike {
+            width: 72px;
+        }
+
+        .lbspan.lblike {
+            width: 90px;
+        }
+        .mdl-grid.mdl-grid--no-spacing.PostcardFoot {
+            margin-left: 12px;
+        }
+
+    }

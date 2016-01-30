@@ -1,0 +1,128 @@
+// colors
+
+$primary-color:		#FF5722;
+$primary-link-color: #FF5722;
+$primary-link-color: inherit;
+$primary-link-color-hover: #FF5722;
+$ui-background: 	#EEEEEE;
+$ui-border:			#BCBCBC;
+$secondary-color:	#333333;
+
+$font-color--dark: #333;
+$font-color--light: #fff;
+$font-color--rbga:rgba(51, 51, 51, 0.75);
+$background--lightest: #fff;
+$background--light: #eee;
+$background--dark: #222;
+$blue: #1f8de2;
+$green: #1fe27b;
+$red: #e21f3f;
+$white: #ffffff;
+$light-blue: #00adef;
+
+//Font Families
+$primary-font: "SourceSansProRegular";
+$light-font: "SourceSansProLight";
+$secondary: 'Roboto', sans-serif;
+$powered-font:'CPMonoLight';
+
+// spacing
+$full-space: 40px;
+$half-space: 20px;
+
+// font sizing
+$font-size--xxs: 8px;
+$font-size--xs: 10px;
+$font-size--sm: 12px;
+$font-size--sml: 14px;
+$font-size--md: 16px;
+$font-size--mdl: 17px;
+$font-size--mdg: 18px;
+$font-size--lgb: 21px;
+$font-size--lg: 24px;
+$font-size--xl: 32px;
+
+// hamburger menu  
+$nav-size: 40px;
+$nav-color: #fff;
+$nav-color-active: #fff;
+$hasBackground: false;
+
+
+
+
+// Advanced Config
+$animation-time: 300ms;
+$animation-easing: ease-in-out;
+
+$z-index-navigation-button: 500;
+$z-index-navigation-inner: $z-index-navigation-button + 25;
+
+@if $hasBackground == false {
+  $nav-color: $nav-color-active;
+}
+
+
+%mobcursor{
+  cursor:pointer;
+}
+
+
+
+// Mixins 
+@mixin bg-cover{
+	  background-size:cover;
+      background-position:center center;
+}
+@mixin light-mdg{
+   font-size: $font-size--mdg;
+   font-family:$light-font;
+}
+@mixin primary-mdg{
+  font: $font-size--mdg $primary-font;
+}
+@mixin soclabel{display:inline-block; font-size:$font-size--sml}
+
+@mixin block-margin{
+	left:0px;
+    right:0px;
+    margin:auto;
+}
+@mixin inline-ellip{
+	display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+@mixin absoluteLR{
+	position: absolute;
+    left: 0px;
+    right: 0px;
+}
+@mixin span-prof{
+	 color: #fff;
+      display: block;
+      position:relative;
+      text-align:center;
+      width:120px;
+}
+@mixin wh100per{
+  width:100%;
+  height:100%;
+}
+
+@mixin wh100lt {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+@mixin pdo{
+	overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+

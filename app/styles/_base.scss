@@ -1,0 +1,395 @@
+/********************** GENERAL STYLING *********************/
+.labels {
+     color: red;
+     background-color: white;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 10px;
+     font-weight: bold;
+     text-align: center;
+     width: 40px;
+     height:20px;
+     border: 2px solid black;
+     white-space: nowrap;
+   }
+
+   
+body {
+  font-family: "SourceSansProRegular";
+  color: $font-color--dark;
+  background-color: $background--lightest;
+}
+/* Marketing Site */
+html, body{
+  background-color:#fff;
+  height:100%;
+}
+html *{
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+html a:hover{
+  text-decoration: none;
+}
+a:focus, a:hover{
+  color: $primary-color;
+}
+h3{
+  font-family: "SourceSansProLight";
+  color: #ff5722;
+  font-size:40px;
+  margin-top:85px;
+  line-height: 40px;
+}
+html h4{
+  font-size: 22px;
+  font-family: "SourceSansProRegular";
+  line-height:34px;
+  margin-top:20px;
+}
+html .row{
+  max-width:none;
+}
+
+a{
+  color: $primary-link-color;
+}
+a:focus{
+  text-decoration: none;
+}
+a.small {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    margin-top: 0px;
+    text-align: left;
+    font-size: 16px;
+    text-align: center;
+}
+input:-webkit-autofill {
+    background-color: #FAFFBD !important;
+}
+ul{
+  padding:0px ;
+}
+.mui-app-content-canvas{
+  padding-left: 256px;
+}
+#app, .appcontent{
+  height:100%;
+}
+.inner-content{
+    padding-left: 180px;
+    padding-top: 100px;
+}
+
+.pRel{
+  position: relative;
+}
+
+.w100{
+  width: 100%;
+}
+
+.bb1{
+  border-bottom:1px solid;
+}
+
+.fl{
+  float:left;
+}
+
+.fr{
+  float: right;
+}
+
+.dflex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex1{
+  flex:1;
+}
+
+.flex2{
+  flex:2;
+}
+
+.mza{
+  margin:0 auto;
+}
+
+.vt{
+  vertical-align: top;
+}
+
+.vm, .vam{
+  vertical-align: middle;
+}
+
+.tac{
+  text-align:center;
+}
+
+.block{
+  display: block;
+}
+
+.dtable{
+  display: table;
+}
+
+.tcell{
+  display: table-cell;
+}
+
+.ilb{
+  display: inline-block;
+}
+
+.bowBtn{
+  background-color: white;
+  color:black;
+}
+
+.wobBtn{
+  color:white;
+}
+
+.wpx150{
+  width: 150px;
+  overflow: hidden;
+}
+
+.over_ellipsis{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.off{
+  display: none !important;
+}
+
+.cp{
+  cursor: pointer;
+}
+
+.tal{
+  text-align: left;
+}
+
+.db{
+  display:block !important;
+}
+
+.tar{
+  text-align: right;
+}
+
+.tc{
+  display: table-cell;
+}
+
+.mt5{
+  margin-top: 5px;
+}
+
+.margin25_auto_0{
+  margin:25px auto 0px;
+}
+
+.margin20{
+  margin:20px;
+}
+
+
+/*for modal component*/
+.fixedModal{
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    text-align: center;
+    overflow: auto;
+}
+
+.semiTransBlack{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    display: table;
+}
+
+#loginModal{
+  position: relative;
+}
+#loginModal form.ls-form{
+  height:auto;
+}
+#loginModal .close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 11px;
+    opacity: .9;
+    z-indiex: 9999999;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.modalWindow{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index:9999;
+}
+
+.modalContent {
+    display: inline-block;
+    background-color: #FFF;
+    margin: 0 8.33%;
+}
+
+
+        /*linked social accounts modal*/
+
+        .saNotLinked, .saLinked {
+
+            span{
+              font-size: 30px;
+            }
+        }
+
+        /*end linked social accounts modal*/
+
+/*end for modal component*/
+
+.postpage{
+  padding:20px;
+}
+
+
+#support-form-content,
+#general-form-content{
+  text-align: center;
+  input[type="text"]{
+    width: 48%;
+    margin-bottom: 5px;
+    display: inline-block;
+    margin: 1%;
+    background-color: rgba(109, 109, 109, 0.09);
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 10px;
+    margin: 10px 1% !important;
+  }
+  textarea, #support-user-subject{
+    width: 98%;
+    margin: 10px auto 5px;
+    background-color: rgba(109, 109, 109, 0.09);
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 10px;
+  }
+
+  }
+
+
+@media screen and (max-width:1439px){
+  .modalContent {
+    display: inline-block;
+    /* padding: 25px 15px; */
+    background-color: #FFF;
+    margin: auto;
+  }
+}
+@media screen and (max-width:1023px){
+  .modalContent{overflow:scroll;}
+  a.small{line-height: 20px;margin-top:15px;}
+}
+@media screen and (max-width:500px){
+  .whitebg{width:100% !important;min-width:320px !important;}
+}
+
+
+@media screen and (max-width:435px){
+ .modalContent {
+    width: 340px;
+    max-width:100%;
+    min-width:320px;
+    /* height: 100%; */
+    height:auto;
+    overflow: scroll;
+    }
+
+     .modal_post_media img {
+    
+    max-width: 360px;
+    }
+    
+}
+
+@media screen and (max-width:350px){
+  .modalContent{
+     width: 300px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

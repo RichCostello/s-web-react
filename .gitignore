@@ -1,0 +1,9 @@
+/node_modules
+/build/git_hook.py
+/.idea
+/build
+.DS_Store
+*.log
+*.rdb
+*.rdb
+dump.rdb

@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head lang="en" id="pagehead">
+    <meta http-equiv="Content-type" content="text/html, charset=utf-8" />
+   <!--  <meta name="apple-itunes-app" content="app-id=908837297, affiliate-data=myAffiliateData, app-argument=https://itunes.apple.com/us/app/station!/id908837297?ls=1&amp;mt=8"> -->
+    <title>StationLocal</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+
+        <script>
+
+
+        var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") != -1; 
+        if(isAndroid) {
+            document.write('<meta name="viewport" content="width=device-width,height='+window.innerHeight+', initial-scale=1.0">');
+        }else{
+             document.write(' <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">');
+        }
+
+
+        </script> 
+
+
+    <script src="//fb.me/react-0.14.2.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?sensor=true"></script>
+
+
+    <meta property="og:url"           content="//www.stationlocal.com/your-page.html" />
+    <meta property="og:type"          content="application" />
+    <meta property="og:title"         content="Your Website Title" />
+    <meta property="og:description"   content="Your station, your voice" />
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link rel='stylesheet' href='/fonts/material-design-iconic-font/css/material-design-iconic-font.css' />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+
+    <!-- Google Scripts that need updating -->
+
+    <meta name="google-signin-clientid" content="348804155327-79t4fmeip2hclhbuuqqt7quqkvvdklv9.apps.googleusercontent.com" />
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-requestvisibleactions" content="//schema.org/AddAction" />
+    <meta name="google-signin-cookiepolicy" content="single_host_origin" />
+
+      <!-- JW-Player --> 
+    <script src="//jwpsrv.com/library/S+JTuPXBEeSBixJtO5t17w.js"></script>
+
+    <script>
+
+        // Load the SDK asynchronously
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+      
+
+          window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+     
+          t._e = [];
+
+          t.ready = function(f) {
+            t._e.push(f);
+          };
+         
+          return t;
+          }(document, "script", "twitter-wjs"));
+
+
+          // function onGooglePlatform(googleUser){
+          //   console.log('onGooglePlatform');
+          //   console.log(googleUser);
+          // }
+
+
+      </script>
+   
+    <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.2/material.min.css">
+    <script src="//storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="canonical" href="//www.stationlocal.com" />
+    <script src="//apis.google.com/js/client.js"></script>
+    <!-- this is what is popping up the "signed in with google tab" -->
+    <script src="//apis.google.com/js/platform.js" async defer></script>
+
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+      <body>
+
+      <div id="fb-root"></div>
+      <script>
+
+      </script>
+
+        <div id="app">
+           <center><img src="/images/splash_screen_logo.png" class="logo" style="max-width:100%"></center>
+        </div>
+
+         <script src="/js/main.js"></script>
+        
+      </body>
+      <script>
+
+      </script>
+</html>

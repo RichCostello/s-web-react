@@ -1,0 +1,209 @@
+
+.fixedModal{
+	.zmdi-close{
+		cursor: pointer;
+	}
+}
+
+.profileModal{
+	margin:30px;
+	min-width:420px;
+
+	.EPaboutme{
+		width:100%;
+		margin-top: 20px;
+	}
+	.EPsubmit{
+		padding:10px;
+		color:#FFF;
+		margin-top: 20px;
+		width: 100%;
+		@extend %mobcursor;
+		border:none;
+	}
+	.EPweburl{
+		margin-left:20px;
+	}
+	textarea{
+		resize: none;
+		width:100%;
+		padding:10px;
+		outline:none;
+	}
+	input[type="text"] {
+    	width: 200px;
+    	padding:10px;
+    	outline:none;
+	}
+	input[type="password"] {
+    	width: 200px;
+    	padding:10px;
+    	outline:none;
+	}
+	input[type="password"]{
+		width:100%;
+	}
+	.epLabel{
+	  font-size: 21px;
+    color: rgba(0, 0, 0, 0.54);
+    margin: 25px 0px 10px;
+	}
+	.editProfileTitle{
+	  font-size: 21px;
+	  color: rgba(51,51,51,1.0);
+	}
+	.close{
+	 @extend %mobcursor;
+	}
+}
+
+.saNotLinked{
+	@extend %mobcursor;
+}
+
+.saLinked{
+	.zmdi-facebook{
+		color:#3b5998;
+	}
+	.fbLinkedLabel{
+		color:#3b5998;
+	}
+	.zmdi-google-plus{
+		color:#f44336;
+	}
+	.gpLinkedLabel{
+		color:#f44336;
+	}
+	.zmdi-twitter{
+		color:#55acee;
+	}
+	.twitLinkedLabel{
+		color:#55acee;
+	}
+}
+
+#linkErrorMessage{
+	max-width: 300px;
+    text-align: left;
+    padding: 0px 16px 20px;
+}
+
+.saLinked{
+	.zmdi-facebook{
+		color:#3b5998;
+	}
+	.fbLinkedLabel{
+		color:#3b5998;
+	}
+	.zmdi-google-plus{
+		color:#f44336;
+	}
+	.gpLinkedLabel{
+		color:#f44336;
+	}
+	.zmdi-twitter{
+		color:#55acee;
+	}
+	.twitLinkedLabel{
+		color:#55acee;
+	}
+}
+ 
+#ProgressModal{
+	width: 100%;
+	margin:50px auto;
+	top: 0px;
+    bottom: 0px;
+    position: absolute;
+
+	h1{
+		width: 100%;
+	}
+
+	#progressBar{
+		width:200px;
+		height:10px;
+		border: 1px solid #ccc;
+		border-radius:10px;
+		margin:0 auto;
+	}
+
+	#progress{
+    background-color: lightblue;
+    width: 0;
+    border-radius: 10px;
+    height: 8px;
+    border: 1px solid #83C9D3;
+    margin-top: 0px;	
+    transition: all .5s ease-out;
+	}
+
+   #progressError{
+/*   	display: none;*/
+   	margin-top: 20px;
+   	font-size: 15px;
+   }
+
+   #cancelError{
+   	background-color: #BE2603;
+    max-width: 250px;
+    margin: 20px auto 0px;
+    padding: 5px 0px;
+    border-radius: 3px;
+    @extend %mobcursor;
+   }
+}
+.whitebg {
+    background-color: #252424;
+    height: 350px;
+    display: block;
+    z-index: 9999999999;
+    width: 500px;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 4px rgba(255,255,255,0.2);
+    -webkit-box-shadow: 0px 0px 4px rgba(255,255,255,0.2);
+    padding: 15px;
+    a.small{
+    	display:none;
+    }
+ }
+
+#NoFBmodal{
+	padding:10px;
+	max-width: 300px;
+	.close{
+		padding:0px !important;
+	}
+	div{
+		padding:20px 10px;
+	}
+}
+
+
+@media screen and (max-width: 435px){
+
+.EPaboutme.tal {
+	text-align: center;
+	}
+
+	
+	.profileModal {
+	    margin: 8px;
+	    min-width: 300px;
+	}
+
+.profileModal input[type="text"] {
+	    width: 280px;
+	    padding: 10px 0px;
+    }
+
+ .profileModal .EPweburl {
+    	margin-left: 0px;
+    }
+
+
+}
+
+
+
+

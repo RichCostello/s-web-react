@@ -1,0 +1,458 @@
+/*for post modal component*/
+
+#postModal {
+  .soclabel{display:inline-block !important;}
+  label.innersoc {
+    width: 35px;
+    text-align: left;
+    text-indent: 5px;
+ }
+   .postActionLine > div {
+    width: 85px;
+  }
+    .ilb.ShareBtn.shareClosed {
+      font-weight:700;
+      top: 3px;
+      position: relative;
+      font-size: 14px;
+  } 
+}
+
+.postModal{
+  max-width: 1200px;
+  display: table;
+  position: relative;
+  .close{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index: 9999;
+    margin: 10px 10px;
+   @extend %mobcursor;
+  }
+  div.more {float: right; width: 30px !important; margin-top: 6px; width: 5px;}
+}
+ 
+main.mdl-layout__content .close {
+    display: none;
+}
+.modal_post_media {
+    width: 685px;
+    height: 685px;
+    display: table-cell;
+  img{
+    width:100%;
+  }
+}
+
+.vertFlex{
+  display: Flex;
+  flex-direction: column;
+}
+
+.modal_post_content{
+    @include pdo;
+    margin-left: 15px;
+    padding-top:24px;
+    width: 520px;
+    height:684px;
+}
+
+.postUserPic{
+  width:50px;
+  height:50px;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+.commenterPic{
+      width: 40px !important;
+      height:40px !important;
+      margin-right: 15px;
+      border-radius: 100%;
+      border:1px solid #979797;
+      overflow: hidden;
+} 
+.commentsList .commenterPic{
+  position: absolute;
+  margin-left:-30px;
+}
+.flexComments ul li{
+  padding-left:30px !important;
+}
+.commenterPic img{
+  width:40px;
+  height:40px;
+}
+.comment{
+  a{
+    display: inline-block;
+    margin-right:20px;
+    vertical-align: top;
+  }
+  i{
+/*    vertical-align: top;
+    font-size: 20px;
+    line-height: 20px;*/
+    right: 20px;
+    position: absolute;
+/*    margin:0;
+    padding:0;
+    color:#888;*/
+  }
+}
+.modal_post_media > a{
+    overflow: hidden;
+    display: block;
+    max-height:685px;
+    @include wh100per;
+    background-size:contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color:#000;
+
+}
+
+.ptrWrap{
+     @include pdo;
+     margin-top: 10px;
+}
+
+.postUserInfo{
+/*    height: 125px;*/
+    /*width:500px;*/
+    width:75%;
+/*    height:100%;*/
+    vertical-align: middle;
+    padding-left:16px;
+    display: inline-table;
+    .zmdi-eye{
+      span{
+        margin-left:5px;
+      }
+    }
+}
+
+.postActionLine{
+    position: relative;
+    margin:20px 0px 20px 5px;
+    width: calc(100% - 5px);
+    .zmdi{
+      span{
+        margin-left: 5px;
+      }
+    }
+}
+
+/* modal comments section */ 
+.ilb.nb.lbspan.modcomment {
+    width: 120px;
+}
+/* end */
+
+
+.postActionLine > div {
+   @include light-mdg;
+    width: 80px;
+    /* border-right: 1px solid #929292; */
+    height: 20px;
+    text-align: center;
+}
+.postActionLine div.nb{
+  border:none;
+}
+.postActionLine label {
+    margin-left: 0px;
+    font-size:$font-size--sml;
+}
+
+.postName{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom:5px;
+}
+.postDescription{
+  font-size:18px;
+  display:block;
+  max-width:408px;
+}
+
+.commentsList .ilb.comment {
+    margin-left: 20px;
+}
+
+.vpc{
+    display: inline-block;
+    border: 1px solid #979797;
+    background-color: #d8d8d8;
+    @extend %mobcursor;
+    padding: 0px 5px;
+    width: 165px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+.postUserName,
+.postStation {
+    line-height: 24px;
+}
+.postUserName{
+  font-size:$font-size--mdg
+}
+.postStation{
+  font: $font-size--md $light-font;
+}
+.postStation i {
+    color: #979797 !important;
+}
+.commenterUserName {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.postViews {
+    font-size: 18px;
+}
+.postViews i{
+  margin-right: 10px;
+  color: #BCBCBC;
+}
+
+input#commentButton{
+  display:none;
+}
+
+.postInfo{
+  height:100%;
+}
+.commentContainer{
+  height: calc(75% - 150px);
+}
+.flexComments{
+    display: block;
+    height: 342px;
+    overflow: scroll;
+    margin-top: 10px;
+    padding-right:15px;
+
+    ul{
+      height:0;
+      li{
+            list-style: none;
+            position: relative;
+            border-bottom: 1px solid #333;
+            padding: 10px 0px;
+            /*this goes up*/
+            max-width: 900px;
+            display: flex; 
+      }
+    }
+}
+.flexComments ul li:last-child {
+    border-bottom: 0px;
+}
+
+
+.postComments ul li{
+
+}
+
+.pipe37{
+  margin:7%;
+}
+
+.postedComment{
+   /*this goes up*/
+  line-height: 18px;
+  margin-bottom:0px;
+}
+
+.hp564{
+
+    position: relative;
+    width: 50.5%;
+    height:100%;
+    display: table-cell;
+}
+
+.pa100{
+  position: absolute;
+  background-color: #FFF;
+  width: 95%;
+  bottom: 24px;
+}
+
+.postTime{
+  font-size:$font-size--mdg;
+  margin-right: 10px;
+}
+
+#commentText{
+  outline:none;
+}
+
+.commentOn{
+  display: flex;
+  input#commentText{
+    flex:1;
+    font-size:$font-size--mdg;
+    text-indent: 10px;
+  }
+}
+
+.mobile_modal_post_media{
+  display: none;
+}
+
+
+
+/* retina wide screen */
+@media only screen  and (min-width : 1440px) {
+
+ .postActionLine { margin-left: 0px} 
+
+}
+
+@media (max-width: 1439px){
+ 
+  #postModal{
+      div.more {float: right; width: 30px !important; margin-top: 6px; width: 5px;}
+      label.innersoc {width: 40px;}
+      .postActionLine > div{width:70px}
+  }
+  .postDescription, .postName {font-size: 18px; line-height: 20px; display: block; width: 408px;}
+  .modal_post_media{width: 473px; height: 473px;}
+  .postActionLine {/* margin-left: 115px;width: calc(100% - 115px); */}
+  .postedComment{font-size:12px;}
+  .commentContainer{height: calc(75% - 165px);}
+  .postActionLine > div {font-size: 16px !important;width: 75px;}
+  .postUserInfo{width:290px;}
+  .modal_post_content{width:520px;height:473px;}
+  .comment{max-width:350px;}
+  .flexComments{height:138px;}
+  .pa100{bottom:24px}
+  .modal_post_content{ height:473px;} 
+  .modal_post_media > a{max-height:473px}
+}
+
+@media screen and (max-width:1023px){
+  #postModal .tc.vm.tar {
+    right: 40px;
+    top: -7px;
+    position: relative;
+    }
+  input#commentButton{display:block; color:#fff; width:88px} 
+  .modal_post_media {width: 100%; display: block;margin-right: 0px;max-width: none;}
+  .modal_post_content { margin-left: 0px;height: auto}
+  .ptrWrap{position: absolute;top:0px;width:100%;}
+  .modal_post_content{position: static;}
+  .modal_post_media{width:482px;height:482px;margin-top:60px;}
+  .postUserPic {width: 50px; height: 50px;}
+  .postUserName, .postStation{line-height: 20px;font-size:18px;}
+  .postUserInfo { width: calc(100% - 50px);}
+  .postModal .close {top: 8px; right: -10px;}
+  .postActionLine {margin-left: 0px;width: 100%; margin-top: 15px; position: absolute; display: inline-block;}
+  .name2btn {min-height: 100px; margin-top: 50px;}
+  .pa100 {position: fixed;background-color: #FFF;bottom: 0px;left: 0px;right: 0px; margin: auto;width: 512px;padding: 16px 15px;}
+  .commentContainer{height:auto; min-height:200px}
+  .flexComments{height:auto;overflow: visible;margin-top:0px;}
+  .flexComments ul{height:auto;}
+  .modal_post_content{width:480px;}
+  .comment{max-width:425px;}
+  .postModal {margin:0px 15px}
+  .postTime, .postViews{font-size:14px}
+ .modal_post_media > a {max-height: 482px; margin-top: 70px;}
+  .postActionLine > div{font-size:14px !important}
+  .flexComments ul li:last-child { margin-bottom: 60px;}
+  .vpc{height:45px; padding-top:10px}
+  h1.postName, .postDescription {font-family:$light-font}
+  .postDescription {
+    font-size: 14px;
+}
+  .postActionLine > div {width:90px}
+  #postModal .more.cp {
+    margin-top: 8px;
+}
+
+}
+
+@media screen and (max-width: 767px){
+  .pa100{
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 435px){
+
+ /* #postModal .postActionLine > div{width:70px}
+  #postModal .soclabel {
+    display: none !important; 
+  }
+#postModal label.innersoc {
+  width: 20px;
+  } */
+
+  #postModal{
+    label.innersoc {width: 20px;}
+    .postActionLine > div{width:70px}
+    .soclabel {display: none !important;}
+  }
+
+.pipe37{
+  margin:6%;
+}
+
+.modal_post_media > a {
+  max-height: 310px;
+  }
+.comment {
+  max-width: 270px;
+  }  
+.postActionLine > div, .ilb.nb.lbspan.modcomment {
+  width: 50px;
+  } 
+ .flexComments ul li:last-child {
+  margin-bottom: 80px;
+  }    
+.pa100{
+  width:100%;
+  max-width: 345px;
+  margin-bottom: 10px;
+}
+.commenterPic img{
+  
+}
+.modal_post_media{
+    width:310px;
+    height:320px;
+
+    }
+ .modal_post_content{
+    width:310px
+ }   
+modal_post_media{
+  width:310px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .pa100{
+    margin-bottom:0px
+  }
+
+  .mobile_modal_post_media img{
+    max-width:310px
+  }
+
+  .postModal{
+    margin:0px 8px;
+  }
+  .postModal .close {
+    right: 0px;
+    }
+}
+
+
+
+
+

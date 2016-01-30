@@ -1,0 +1,167 @@
+    .downloadapp {
+      padding: 0px;
+      margin: 0;
+      width: 400px;
+      margin: 0 auto;
+    }
+    .downloadapp li, .downloadapp2 li {
+      display: inline-block;
+        padding:10px;
+    }
+    .downloadapp li a:hover, .downloadapp2 li a:hover {
+      opacity: .6;
+        transition: all .5s ease-out;
+    }
+    .downloadapp {
+      padding: 0px;
+      margin: 0;
+      width: 400px;
+      margin:30px auto;
+    } 
+    li{
+      padding:0px;
+      margin-right:0px;
+    }
+    body{
+      overflow:auto;
+    }
+    .parallax{
+      position: relative;
+    }
+    .parallax.light{
+      background-color:#fff;
+    }
+    .relative{
+      position: relative;
+    }
+    .rect{
+      @include wh100lt;
+      background: url('/images/rectangle_1.png');
+      background-size:cover;
+    }
+    #banner{
+      background: url('/images/banner.png');
+      background-repeat: no-repeat;
+      @include bg-cover;
+      min-height: 400px;
+    }
+    .mid {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+    }
+    .centerpiece {
+        width: 250px;
+        margin: auto;
+    }
+    .max{
+      max-width:100%;
+      vertical-align: bottom;
+      margin-bottom: -15px;
+    }
+    .mtop{
+      margin-top:25px;
+    }
+    #banner .mid{
+      height: 190px;
+    }
+    ul.list{
+      list-style: none;
+      margin-top:-10px;
+    }
+    ul.list li:before {
+      content: "\00BB \0020";
+    }
+    ul.list li{
+      padding-left:5px;
+      line-height:20px;
+    }
+    .marketing p{
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .marketing h1 {
+      color: #fff;
+      font-family: "SourceSansProLight";
+      text-align: center;
+      font-size: 36px;
+      font-weight: normal;
+    }
+    .marketing h2 {
+      font-family: "SourceSansProLight";
+      color: #fff !important;
+      font-size: 26px !important;
+      text-align: center;
+    }
+    .marketing h3 {
+        color: #333;
+       font-size: 34px;
+      margin-top: 60px;
+    }
+    .marketing h3.nomarg{
+      margin-top:10px;
+    }
+    .marketing h4 {
+        font-family: "SourceSansProLight" !important;
+        font-weight: normal;
+        font-size: 44px !important;
+        text-align: center;
+        line-height: 52px;
+    }
+    .marketing h5{
+      font-family: "SourceSansProLight";
+      font-size: 22px;
+      margin-top:-15px;
+    }
+    a.btn-orange {
+        height: 40px;
+        display: block;
+        width: 100px;
+        text-align: center;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        color: #fff;
+        line-height: 40px;
+        font-size: 14px;
+        box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+        -moz-box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fc9a23+0,ff5722+100 */
+        background: #fc9a23; /* Old browsers */
+        background: -moz-linear-gradient(top,  #fc9a23 0%, #ff5722 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fc9a23), color-stop(100%,#ff5722)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #fc9a23 0%,#ff5722 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #fc9a23 0%,#ff5722 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #fc9a23 0%,#ff5722 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #fc9a23 0%,#ff5722 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc9a23', endColorstr='#ff5722',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    @media screen and (max-width:1280px){
+
+      .max{position: absolute;bottom:0px; left:0px}
+      .min400{min-height:400px;}
+
+    }
+    @media screen and (max-width:840px){
+      .max{position: relative;}
+    }
+    @media screen and (max-width:768px){
+      .marketing p,
+      .marketing li,
+      .marketing h3, .marketing h4, .marketing h5{text-align: center}
+      .marketing a{margin:auto;margin-bottom:30px;}
+    }
+    @media screen and (max-width: 400px){
+
+      .downloadapp {width: 200px;}
+      #banner .mid{height:330px;}
+
+    }
+
+/*station_gp.png*/
+/*social.png*/

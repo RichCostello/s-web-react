@@ -1,0 +1,425 @@
+/********************** SPLASH PAGE CSS *********************/
+.splash-page{
+    height: 100%;
+    width: auto;
+    overflow: auto;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: left center;
+    background-attachment: fixed;
+    min-height:770px;
+  img{
+    width: auto;
+    max-height: 260px;
+  }
+}
+
+.splash-content {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 400px;
+
+}
+.splash-content.bottom{
+  top:auto;
+  bottom:50px;
+  height:180px;
+}
+
+.poweredByBlock{
+    @include absoluteLR;
+    bottom: 75px;
+    height: auto;
+}
+
+.localPulse{
+    position: relative;
+    height: auto;
+    top: 70px;
+}
+.taketour{
+  font-size:$font-size--lgb;
+  position: absolute;
+  right:20px;
+  top:20px;
+}
+
+.poweredBy {
+    font:$font-size--sml $powered-font;
+    display: block;
+    line-height: .8em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: $white;
+}
+.station-branding {
+    padding: 10px 45px;
+    top: 65px;
+    position: relative;
+}
+.station-branding img.logo {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+}
+
+.pbstation {
+    font:$font-size--xl $powered-font;
+    color:$white;
+    letter-spacing: 5px;
+    margin-top: 20px !important;
+}
+
+.lpulse {
+    font-family: 'Jennasue';
+    color: #FFF;
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin-top: 20px !important;
+}
+
+.splash-page div > .bowBtn, .splash-page div > .wobBtn {
+    font-family: 'SourceSansProRegular';
+    font-size: 1.4em;
+    letter-spacing: .05em;
+    padding: 15px;
+    width: 80%;
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+
+.splash-page div > .bowBtn:hover{
+    color:black;
+    text-decoration: none;
+}
+
+.splash-page div > .wobBtn:hover{
+    text-decoration: none;
+}
+
+.splash-page div > .wobBtn{
+  border:1px solid white;
+} 
+
+.gradient{
+  position: relative;
+  @include wh100per;
+  overflow: hidden;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)); /* Standard syntax */
+}
+.gradient.light{
+  background: -webkit-linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.4)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.4)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.4)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.4)); /* Standard syntax */
+}
+
+@media screen and (max-width:1439px){
+  /*.station-branding {
+    padding-top:5px !important;
+    padding: 10px 35px;
+  }
+  .splash-page{
+    min-height:640px;
+  }
+  /*.splash-content{
+    top:-30px;
+    max-width: 192px;
+    img{
+      width:100%;
+    }
+
+  }
+  .splash-content.bottom{bottom:40px;} */
+
+  .splash-page img{
+    max-height:220px;
+  }
+  .splash-content{
+    height:360px;
+    top:-70px;
+  }
+  .splash-page{
+    min-height:640px;
+  }
+
+
+
+}
+@media screen and (max-width: 1023px){
+
+form.ls-form input{
+/* margin: -1px auto; */
+}
+  .poweredBy{
+   
+    font-size:$font-size--xxs;
+    font-weight:600;
+   
+  }
+  .station-branding{
+      max-width: 200px;
+      margin: auto;
+  }
+  .poweredByBlock{
+    bottom:115px;
+  }
+  .pbstation{
+    margin-top:0px !important;
+    font-size:$font-size--mdl;
+
+  }
+
+  .splash-page div > .bowBtn, .splash-page div > .wobBtn {
+    //width:128px
+  }
+
+  .splash-page div > .wobBtn{
+    margin-top:46px
+  }
+
+  div.splash-foot{
+    position:absolute;
+    bottom:10px;
+    left:65px;
+
+  }
+  .splash-content{
+    @include block-margin;
+  }
+
+  .splash-foot li{
+    list-style:none;
+    font-size:$font-size--sm;
+  }
+
+  .splash-page{
+  background-position: 34% center;
+  }
+
+  .lpulse {
+
+  font-size: 45px;
+  letter-spacing: 0px; }
+  
+   .splash-content.bottom {
+    bottom: inherit;
+    height: 160px;
+    top: 305px;
+  }
+
+  .expanded.splash-content.bottom{
+      top: auto;
+      bottom: 50px;
+      height: 140px;
+  }
+
+  .splash-content{
+    top:-30px;
+    max-width: 192px;
+    img{
+      width:auto;
+    }
+  }
+  .splash-content img{
+    max-width:191px;
+  }
+  .expanded .splash-page div>.bowBtn, .expanded .splash-page div>.wobBtn{
+    width:100%;
+  }
+  .station-branding {
+    padding: 10px 15px;
+  }
+  .expanded .station-branding {
+    max-width: 250px;
+    margin: auto;
+  } 
+  .expanded .splash-content.bottom {
+    height: 170px;
+    top: 355px;
+  }
+
+}
+
+@media (max-width :767px) {
+  .lpulse {font-size: 60px; }  
+  
+  div.simpleFooter{
+    display:inherit;
+  }
+  .station-branding{
+    top:20px;
+    max-width:300px;
+   }
+   .splash-page div > .stl.wobBtn{
+    margin-top:10px;
+   }
+   .splash-content{
+    margin-top:40px !important;
+   }
+  .localPulse{
+  top:45px
+  }
+  .station-branding img.logo{
+   max-width:235px
+  }
+  section.splash-page.signup{
+    min-height:720px;
+  }
+  .mdl-layout.expanded .custom-drawer .view-all-sb{
+    margin-left:0px
+  }
+
+    .splash-content.bottom {
+      top: auto;
+      bottom: 50px;
+      height: 140px;
+  }
+  section.splash-page{
+    min-height:600px;
+  }
+   .expanded .splash-page div>.bowBtn, .expanded .splash-page div>.wobBtn{
+    width:45%;
+    }
+
+  .splash-content{
+    @include wh100per;
+    max-width: 100%;
+    margin: 0px auto;
+  }
+
+   .splash-page img{
+/*    max-height: 180px;*/
+   }
+   .pbstation{
+    margin-top:0px;
+   }
+   .poweredByBlock{
+    bottom:135px;
+   }
+   .splash-content img {
+      display: block;
+      margin: auto;
+      width:auto;
+    }
+
+    .splash-content img {
+      width: 250px !important;
+      max-width: none;
+      height: auto !important;
+      max-height: none;
+    }  
+    .expanded .station-branding{
+      max-width:270px;
+    }
+  
+
+}
+
+@media (max-width :480px) {
+
+
+.poweredByBlock {
+  position: relative;
+  bottom: 0px;
+  top:380px
+   }
+
+
+  
+ .splash-drawer{
+    max-width:480px;
+    width:100%
+  }
+ 
+ .splash-content{
+    padding-top:0px;
+    height:100%; 
+ }
+ .splash-page{
+  min-height:500px;
+ }
+
+ .poweredBy{
+  font-size:$font-size--sml;
+  margin-top: 5em;
+  margin-bottom: 10px;
+ }
+ .pbstation{
+   font-size:$font-size--xl;
+    margin-top: 20px !important; 
+ }
+ .splash-page div > .wobBtn{
+   margin-top: 250px;
+ }
+
+ .splash-page div > .stl.wobBtn{
+   margin-top: 50px;
+ }
+
+ div.splash-foot ul li a{
+  display:none
+ }
+ a.wobBtn.ilb{
+  padding: 14px;
+ }
+
+ .splash-page div .bowBtn, .splash-page div .wobBtn{
+  width:45%
+ }
+
+}
+
+@media (max-width :435px) {
+  
+  .splash-page div .bowBtn, .splash-page div .wobBtn {
+     position:relative;
+     top:0px;
+    }
+
+    .poweredByBlock{
+      position:absolute;
+         top:inherit;
+         bottom:320px;
+    
+    }
+    section.splash-page.login{
+      min-height: 680px
+    }
+
+}
+
+@media (max-width :350px) {
+  .lpulse{
+    margin-top:0px !important;
+  }
+
+   div.login-block {
+    margin-top: 10px;
+    }
+
+     .splash-page div .bowBtn, .splash-page div .wobBtn {
+     position:relative;
+     top:6%
+    }
+
+    .poweredByBlock{
+       top:inherit;
+      bottom:45px;
+    }
+
+}
+
+
+

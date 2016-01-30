@@ -1,0 +1,18 @@
+/********************** GOOGLE MAPS PAGE CSS *********************/
+.map-gic {
+    height: 500px;
+    width: 500px;
+}
+
+.modal {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin: -70px 0 0 -120px;
+    border: 1px solid #ccc;
+    background: white;
+}
