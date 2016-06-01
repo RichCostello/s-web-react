@@ -3,6 +3,10 @@
   "version": "0.2.0",
   "author": "Jake Marsh <jakemmarsh@gmail.com>",
   "description": "Boilerplate using React, Browserify, SASS, and Gulp.",
+  "scripts": {
+    "build": "gulp",
+    "start": "node app.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jakemmarsh/react-rocket-boilerplate.git"
@@ -16,7 +20,18 @@
   ],
   "engines": {
     "node": "^0.12.x",
-    "npm": "^2.1.x"
+    "npm": "^2.1.x",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.x",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6"
   },
   "devDependencies": {
     "axios": "^0.5.4",
@@ -30,17 +45,6 @@
     "express": "^4.13.1",
     "flux": "2.0.3",
     "flutter": "0.0.4",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-if": "^1.2.5",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.x",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-streamify": "0.0.5",
-    "gulp-uglify": "^1.2.0",
-    "gulp-util": "^3.0.6",
     "humps": "^0.6.0",
     "keymirror": "0.1.1",
     "load-script": "1.0.0",
