@@ -71,6 +71,18 @@
     "material-ui": "^0.10.4",
     "mcfly": "0.0.10",
     "react-avatar-cropper": "0.0.6",
-    "react-dropzone": "^2.1.0"
+    "react-dropzone": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.x",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+     "lodash": "^3.10.0"
   }
 }

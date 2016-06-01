@@ -1,6 +1,10 @@
 var gulp = require('gulp')
 var runSeq = require('run-sequence')
 
-gulp.task('heroku:production', function(){
-  runSeq('clean', 'build', 'minify')
-})
+gulp.task('serveprod', function() {
+  connect.server({
+    root: [your_project_path],
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
