@@ -4,8 +4,7 @@
   "author": "Jake Marsh <jakemmarsh@gmail.com>",
   "description": "Boilerplate using React, Browserify, SASS, and Gulp.",
   "scripts": {
-  "build": "gulp",
-  "start": "node server.js"
+  "build": "gulp"
   },
   "repository": {
     "type": "git",
