@@ -18,10 +18,6 @@
     "node": "^0.12.x",
     "npm": "^2.1.x"
   },
-  "scripts": {
-  "start": "node app",
-  "postinstall": "gulp default"
-},
   "devDependencies": {
     "axios": "^0.5.4",
     "babelify": "^6.1.x",
