@@ -7,10 +7,6 @@
     "type": "git",
     "url": "https://github.com/jakemmarsh/react-rocket-boilerplate.git"
   },
-  "scripts": {
-  "start": "node app",
-  "postinstall": "gulp default"
-},
   "keywords": [
     "gulp",
     "browserify",
@@ -22,7 +18,7 @@
     "node": "^0.12.x",
     "npm": "^2.1.x"
   },
-  "Dependencies": {
+  "devDependencies": {
     "axios": "^0.5.4",
     "babelify": "^6.1.x",
     "browser-sync": "^2.7.13",
@@ -68,7 +64,9 @@
     "superagent": "^1.2.0",
     "underscore": "^1.7.0",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.2.x",
+    "watchify": "^3.2.x"
+  },
+  "dependencies": {
     "express-session": "^1.11.3",
     "material-ui": "^0.10.4",
     "mcfly": "0.0.10",
