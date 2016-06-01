@@ -14,7 +14,7 @@
     "sass",
     "boilerplate"
   ],
-  "private": true,
+  "private": false,
   "engines": {
     "node": "^0.12.x",
     "npm": "^2.1.x"
@@ -73,9 +73,5 @@
     "mcfly": "0.0.10",
     "react-avatar-cropper": "0.0.6",
     "react-dropzone": "^2.1.0"
-  },
-      "scripts": {
-      "start": "node app",
-      "postinstall": "gulp default"
-    }
+  }
 }
