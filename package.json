@@ -58,7 +58,6 @@
     "browser-sync": "^2.7.13",
     "browserify": "^10.2.6",
     "express-session": "^1.11.3",
-     "lodash": "^3.10.0",
     "material-ui": "^0.10.4",
     "mcfly": "0.0.10",
     "react-avatar-cropper": "0.0.6",
