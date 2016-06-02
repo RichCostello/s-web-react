@@ -75,7 +75,7 @@
     "underscore": "^1.7.0"
   },
       "scripts": {
-      "postinstall": "gulp build",
+      "build": "gulp",
       "start": "node app.js"
     }
 }
