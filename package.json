@@ -3,10 +3,6 @@
   "version": "0.2.0",
   "author": "Jake Marsh <jakemmarsh@gmail.com>",
   "description": "Boilerplate using React, Browserify, SASS, and Gulp.",
-   "scripts": {
-      "build": "gulp",
-      "start": "node app.js"
-    },
   "repository": {
     "type": "git",
     "url": "https://github.com/jakemmarsh/react-rocket-boilerplate.git"
