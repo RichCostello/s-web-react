@@ -1,14 +1,14 @@
-// 'use strict';
+'use strict';
 
-// var gulp        = require('gulp');
-// var runSequence = require('run-sequence');
+var gulp        = require('gulp');
+var runSequence = require('run-sequence');
 
-// gulp.task('prod', ['clean'], function(callback) {
+gulp.task('prod', ['clean'], function(callback) {
 
-//   callback = callback || function() {};
+  callback = callback || function() {};
 
-//   global.isProd = true;
+  global.isProd = true;
 
-//   runSequence(['sass', 'imagemin', 'browserify', 'copyFonts', 'copyIndex', 'copyIcons'], callback);
+  runSequence(['sass', 'imagemin', 'browserify', 'copyFonts', 'copyIndex', 'copyIcons'], callback);
 
-// });
+});
