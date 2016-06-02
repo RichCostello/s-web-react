@@ -75,7 +75,7 @@
     "underscore": "^1.7.0"
   },
       "scripts": {
-      "preinstall": "gulp prod",
+      "preinstall": "gulp dev",
       "start": "node app.js"
     }
 }
