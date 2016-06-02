@@ -73,5 +73,9 @@
     "gulp-streamify": "0.0.5",
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.6"
-  }
+  },
+      "scripts": {
+      "build": "gulp",
+      "start": "node app.js"
+    }
 }
