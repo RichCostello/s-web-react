@@ -4,8 +4,8 @@
   "author": "Jake Marsh <jakemmarsh@gmail.com>",
   "description": "Boilerplate using React, Browserify, SASS, and Gulp.",
    "scripts": {
-      "build": "gulp",
-      "start": "node app.js"
+      "start": "node app",
+      "postinstall": "gulp default"
     },
   "repository": {
     "type": "git",
@@ -36,7 +36,6 @@
     "humps": "^0.6.0",
     "keymirror": "0.1.1",
     "load-script": "1.0.0",
-    "lodash": "^3.10.0",
     "material-design-react": "0.2.1",
     "material-design-iconfont": "0.1.7",
     "morgan": "^1.6.1",
@@ -59,6 +58,7 @@
     "browser-sync": "^2.7.13",
     "browserify": "^10.2.6",
     "express-session": "^1.11.3",
+     "lodash": "^3.10.0",
     "material-ui": "^0.10.4",
     "mcfly": "0.0.10",
     "react-avatar-cropper": "0.0.6",
