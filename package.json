@@ -52,7 +52,6 @@
     "redis": "0.12.1",
     "reflux": "^0.2.*",
     "require-dir": "^0.1.0",
-    "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.2.x"
   },
   "dependencies": {
@@ -76,6 +75,7 @@
     "gulp-util": "^3.0.6",
      "run-sequence": "^1.1.1",
     "superagent": "^1.2.0",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+     "vinyl-source-stream": "^1.1.0"
   }
 }
