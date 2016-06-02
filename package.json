@@ -4,9 +4,9 @@
   "author": "Jake Marsh <jakemmarsh@gmail.com>",
   "description": "Boilerplate using React, Browserify, SASS, and Gulp.",
   "scripts": {
-  "start": "app index.html",
-  "prestart": "gulp default"
-    },
+  "build": "gulp",
+   "start": "node app"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jakemmarsh/react-rocket-boilerplate.git"
