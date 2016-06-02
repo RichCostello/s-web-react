@@ -5,7 +5,7 @@
   "description": "Boilerplate using React, Browserify, SASS, and Gulp.",
   "scripts": {
   "start": "node app",
-  "postinstall": "gulp default"
+  "prestart": "gulp default"
     },
   "repository": {
     "type": "git",
